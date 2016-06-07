@@ -1,4 +1,3 @@
 language: generic
-sudo: required
 script:
  - bash -e ./test.sh

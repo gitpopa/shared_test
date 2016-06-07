@@ -1,3 +1,4 @@
 language: generic
 script:
  - bash -e ./test.sh
+ - bash -e ./kadai2.sh 100 25

@@ -12,22 +12,23 @@
 PARAMVAL=$#
 if [ $PARAMVAL -ne "2" ]; then
 	echo "mismatch the number of parameter. need 2 parameters."
-	exit -1
+	exit 1
 fi
 
 # check the range of parameters
 if [ $1 -le "0" ]; then
 	echo "invalid parameter. ( $1 is NOT positive integer )"
-	exit -1
+	exit 1
 fi
 if [ $2 -le "0" ]; then
 	echo "invalid parameter. ( $2 is NOT positive integer )"
-	exit -1
+	exit 1
 fi
 
 # prepare
 if [ $1 -eq $2 ]; then
 	echo "greatest common divisor( $1 and $2 ) = $1"
+	echo "$1" > kadai2_result
 	exit 0
 
 elif [ $1 -lt $2 ]; then
@@ -49,6 +50,7 @@ do
 		if [ $MOD -eq "0" ]; then
 			# find!
 			echo "greatest common divisor( $1 and $2 ) = $COMDIV"
+			echo $COMDIV > kadai2_result
 			exit 0
 		fi
 	fi
@@ -57,6 +59,7 @@ done
 
 # not find 
 echo "greatest common divisor( $1 and $2 ) = 1"
+echo "1" > kadai2_result
 exit 0
 
  

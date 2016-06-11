@@ -1,3 +1,4 @@
-language: generic
+language: c
 script:
- - bash -e ./test.sh
+ - gcc --version
+ - gcc kadai2_teset.c

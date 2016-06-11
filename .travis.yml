@@ -1,4 +1,4 @@
 language: c
-script:
- - gcc --version
- - gcc kadai2_teset.c
+compiler:
+ - gcc
+script: kadai2_test

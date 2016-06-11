@@ -1,4 +1,4 @@
 language: c
 compiler:
  - gcc
-script: ./a.out
+script: ./kadai2_test

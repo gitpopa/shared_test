@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define RANGE_MIN -3
-#define RANGE_MAX 3
+#define RANGE_MAX 20
 
 
 // a > b の引数2つの最大公約数を返す関数
